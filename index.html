@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SolTek</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <header>
     <div class="container navbar">
-      <a href="#hero"><img src="assets/img/icons/diagnostics.svg" class="logo" alt="SolTek"></a>
+      <a href="#hero"><img src="assets/img/icons/diagnostics.svg" class="logo" alt="SolTek Logo"></a>
       <button class="nav-toggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
       <nav>
         <ul>
@@ -22,69 +23,66 @@
   </header>
 
   <section id="hero" class="hero">
-    <div class="container hero-container">
-      <h1>SolTek</h1>
-      <p>Alternative energy consulting, maintenance & repair solutions.</p>
+    <div class="overlay">
+      <h1 class="fade-in">SolTek</h1>
+      <p class="fade-in delay-1">Alternative energy consulting, maintenance & repair solutions.</p>
+      <a class="btn fade-in delay-2" href="#contact">Get in Touch</a>
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="section fade-in">
     <div class="container">
       <h2>About Us</h2>
       <p>We empower businesses to harness solar energy through expert consulting, proactive maintenance, and cutting-edge optimization.</p>
     </div>
   </section>
 
-  <section id="services">
+  <section id="services" class="section">
     <div class="container">
-      <h2>Our Services</h2>
+      <h2 class="fade-in">Our Services</h2>
     </div>
-    <section class="parallax" style="background-image:url('https://source.unsplash.com/1600x900/?solar,maintenance');">
-      <div class="overlay">
-        <img src="assets/img/icons/diagnostics.svg" class="service-icon">
-        <h2>Diagnostics & Repair</h2>
-        <p>Comprehensive troubleshooting of inverters, panels, and system components.</p>
+    <div class="parallax" style="background-image:url('https://source.unsplash.com/1600x900/?solar,panels');">
+      <div class="overlay fade-in">
+        <img src="assets/img/icons/diagnostics.svg" class="service-icon" alt="">
+        <h3>Diagnostics & Repair</h3>
+        <p>Comprehensive troubleshooting of inverters, panels, and system components to ensure peak performance.</p>
       </div>
-    </section>
-    <section class="parallax" style="background-image:url('https://source.unsplash.com/1600x900/?solar,training');">
-      <div class="overlay">
-        <img src="assets/img/icons/training.svg" class="service-icon">
-        <h2>Training & Support</h2>
-        <p>Hands-on programs and real-time support to upskill field technicians.</p>
+    </div>
+    <div class="parallax" style="background-image:url('https://source.unsplash.com/1600x900/?solar,training');">
+      <div class="overlay fade-in delay-1">
+        <img src="assets/img/icons/training.svg" class="service-icon" alt="">
+        <h3>Training & Support</h3>
+        <p>Hands-on training programs and real-time support to upskill your field technicians and optimize operations.</p>
       </div>
-    </section>
-    <section class="parallax" style="background-image:url('https://source.unsplash.com/1600x900/?solar,monitoring');">
-      <div class="overlay">
-        <img src="assets/img/icons/monitoring.svg" class="service-icon">
-        <h2>Performance Monitoring</h2>
-        <p>AI-driven dashboards and automated health checks for maximum uptime.</p>
+    </div>
+    <div class="parallax" style="background-image:url('https://source.unsplash.com/1600x900/?solar,monitoring');">
+      <div class="overlay fade-in delay-2">
+        <img src="assets/img/icons/monitoring.svg" class="service-icon" alt="">
+        <h3>Performance Monitoring</h3>
+        <p>AI-driven dashboards and automated health checks to keep your solar arrays running at maximum efficiency.</p>
       </div>
-    </section>
-    <section class="parallax" style="background-image:url('https://source.unsplash.com/1600x900/?solar,analytics');">
-      <div class="overlay">
-        <img src="assets/img/icons/ai.svg" class="service-icon">
-        <h2>AI Optimization</h2>
-        <p>Predictive analytics and ML to forecast issues and boost energy yield.</p>
+    </div>
+    <div class="parallax" style="background-image:url('https://source.unsplash.com/1600x900/?solar,analytics');">
+      <div class="overlay fade-in delay-3">
+        <img src="assets/img/icons/ai.svg" class="service-icon" alt="">
+        <h3>AI Optimization</h3>
+        <p>Predictive analytics and machine learning algorithms to forecast issues and boost energy yield.</p>
       </div>
-    </section>
+    </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section fade-in">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>We'd love to discuss partnerships or investment opportunities.</p>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:soltek@protonmail.ch">soltek@protonmail.ch</a></li>
-        <li><strong>Phone:</strong> +971 4 123 4567</li>
-        <li><strong>Address:</strong> Office 101, Solar Plaza</li>
-      </ul>
+      <p>We’d love to discuss partnerships or investment opportunities.</p>
+      <a class="btn" href="mailto:soltek@protonmail.ch">Email Us</a>
     </div>
   </section>
 
-  <section id="investors">
+  <section id="investors" class="section fade-in delay-1">
     <div class="container">
-      <h2>Investors</h2>
-      <p>Download our pitch deck to learn about SolTek's business model and projections.</p>
+      <h2>For Investors</h2>
+      <p>Download our pitch deck to learn about SolTek's mission, business model, and projections.</p>
       <a class="btn" href="link-to-pitch-deck.pdf" target="_blank">Download Pitch Deck</a>
     </div>
   </section>
