@@ -103,3 +103,85 @@ nav a:hover { color:var(--accent); }
   transition:opacity .3s;
 }
 .back-to-top.show { opacity:1; pointer-events:auto; }
+
+/* Footer */
+.site-footer {
+  background: var(--primary);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+.site-footer p {
+  margin: 0.25rem 0;
+}
+.site-footer a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* Hero Animated Gradient */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.hero-gradient {
+  background: linear-gradient(270deg, #0A1F44, #E08D3C, #152B5D);
+  background-size: 600% 600%;
+  animation: gradientBG 15s ease infinite;
+  position: relative;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-gradient .overlay {
+  text-align: center;
+}
+
+/* Parallax Gradient Sections */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parallax-diagnostics {
+  background: linear-gradient(135deg, #0A1F44, #152B5D);
+}
+.parallax-training {
+  background: linear-gradient(135deg, #E08D3C, #FFB347);
+}
+.parallax-monitoring {
+  background: linear-gradient(135deg, #0A5F44, #4CAF50);
+}
+.parallax-ai {
+  background: linear-gradient(135deg, #2D0A44, #8A2BE2);
+}
+
+/* Fade-in utility (already present but reiterated) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Footer tweak */
+.site-footer {
+  background: var(--primary);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+.site-footer a {
+  color: var(--accent);
+}
+
