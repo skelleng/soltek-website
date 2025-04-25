@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('nav');
@@ -8,10 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.classList.toggle('active');
   });
 
-  document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+  document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', e => {
-      e.preventDefault();
-      document.querySelector(link.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      const href = link.getAttribute('href');
+      if (href.startsWith('#')) {
+        e.preventDefault();
+        document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+      }
       if (nav.classList.contains('open')) {
         nav.classList.remove('open');
         navToggle.classList.remove('active');
