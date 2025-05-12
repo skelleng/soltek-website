@@ -63,6 +63,7 @@ nav a { font-weight:500; transition:color .2s; }
   background-attachment:fixed; background-position:center; background-size:cover;
   min-height:60vh; display:flex; align-items:center; justify-content:center; text-align:center;
 }
+/* Default overlay (you may keep for other cases) */
 .parallax .overlay {
   background:rgba(0,0,0,0.5); padding:2rem; border-radius:8px;
 }
@@ -72,15 +73,22 @@ nav a { font-weight:500; transition:color .2s; }
 .fade-in { opacity:0; transform:translateY(20px); transition:opacity .6s ease-out, transform .6s ease-out; }
 .fade-in.visible { opacity:1; transform:none; }
 /* Delay classes */
-.delay-1 { transition-delay: .3s; }
-.delay-2 { transition-delay: .6s; }
-.delay-3 { transition-delay: .9s; }
-.delay-4 { transition-delay: 1.2s; }
-.delay-5 { transition-delay: 1.5s; }
-.delay-6 { transition-delay: 1.8s; }
-.delay-7 { transition-delay: 2.1s; }
-.delay-8 { transition-delay: 2.4s; }
+.delay-1 { transition-delay:.3s; }
+.delay-2 { transition-delay:.6s; }
+.delay-3 { transition-delay:.9s; }
+.delay-4 { transition-delay:1.2s; }
+.delay-5 { transition-delay:1.5s; }
+.delay-6 { transition-delay:1.8s; }
+.delay-7 { transition-delay:2.1s; }
+.delay-8 { transition-delay:2.4s; }
 
 /* Footer */
-.site-footer { background: var(--primary); color:#FFF; padding:2rem 0; text-align:center; }
-.site-footer p { margin: .5rem 0; }
+.site-footer { background:var(--primary); color:#FFF; padding:2rem 0; text-align:center; }
+.site-footer p { margin:.5rem 0; }
+
+/* --------- New: Minimal Overlay Variant --------- */
+.overlay.minimal {
+  background: rgba(0, 0, 0, 0.4); /* lighter, more transparent black */
+  padding: 2rem;                /* consistent padding */
+  border-radius: 0;             /* full-width flat edges */
+}
