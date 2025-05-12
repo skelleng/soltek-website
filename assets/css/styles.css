@@ -221,3 +221,22 @@ body section#services .parallax .overlay p {
 .site-footer p {
   margin: .5rem 0;
 }
+
+/* Services animated gradient (same as hero, but fit to section) */
+.services-gradient {
+  background: linear-gradient(270deg, var(--primary), var(--accent), var(--primary));
+  background-size: 600% 600%;
+  animation: gradientBG 15s ease infinite;
+  color: #FFF;               /* make sure any text is white */
+}
+
+.services-gradient .container {
+  /* counteract .section’s var(--light-bg) */
+  background: transparent;
+}
+
+/* If you want the heading to pop a bit more */
+.services-gradient h2 {
+  color: #FFF;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
